@@ -23,6 +23,7 @@ jobs:
   publish-latest:
     environment:
       IMAGE_NAME: maxtacu/echo-speaks-server
+      DOCKERHUB_USERNAME: maxtacu
     docker:
       - image: circleci/buildpack-deps:stretch
     steps:
